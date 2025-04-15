@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cafe-beige text-cafe-dark;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cafe-gold focus:border-transparent transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply w-full py-2 px-4 bg-cafe-brown text-white rounded-lg hover:bg-opacity-90 transition-all duration-200 transform hover:scale-[1.02];
+  }
+  
+  .btn-secondary {
+    @apply w-full py-2 px-4 border-2 border-cafe-brown text-cafe-brown rounded-lg hover:bg-cafe-brown hover:text-white transition-all duration-200 transform hover:scale-[1.02];
+  }
+  
+  .social-btn {
+    @apply flex items-center justify-center w-full py-2 px-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-all duration-200;
+  }
+}
+
+:root {
+  --cafe-brown: #8B4513;
+  --cafe-dark: #5C2E0E;
+  --cafe-gold: #D4AF37;
+} 
